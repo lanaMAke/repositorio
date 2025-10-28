@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5🎁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lan House JS</h1>
+        <hr><br>
+        <form action="">
+            <label for="">Valor por 15 min de uso R$: </label>
+            <input type="text" id="valorMin"><br>
+            <label for="">Tempo de Uso:</label>
+            <input type="text" id="time">
+<br><br>
+            <div style="text-align: center;">
+            <input type="button" id="botao" value="Mostrar"></div>
+            <br>
+   
+            <span id="msgValor"></span><br>
+            
+            
+            
+
+        </form>
+
+        <script>
+
+            let botao = document.querySelector('#botao');
+            // capturar eventos com mouse
+            botao.addEventListener('click', function(){
+               // alert('Clicou em eu.. ');
+               let preco = document.querySelector('#valorMin').value;
+               let temp = document.querySelector('#time').value;
+
+               //calcular valor do medicamento a partir de duas vezes - desconto a partir dos centavos;
+            let time = Math.ceil(temp/15);
+            let pagar = preco * time ; // preciso de ajuda nessa linha
+
+                //apresentar na tela
+            
+            let msgValor = document.querySelector('#msgValor'); 
+           
+            
+            msgValor.innerHTML = `Valor a Pagar R$: ${pagar.toFixed(2)}`;
+
+            });
+
+        </script>
+</body>
+</html>

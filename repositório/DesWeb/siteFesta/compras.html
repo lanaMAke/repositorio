@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho✨</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+<style>
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ceaddbab;
+  }
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #e60000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cart {
+  font-size: 20px;
+}
+
+/* Produtos */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.products {
+  display: flex;
+  gap: 20px;
+  flex: 3;
+  padding-top: 20px;
+}
+
+.product {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Finalização */
+.checkout {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  height: fit-content;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.checkout p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.checkout button {
+  background-color: #9200e6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #f8f7f74d;
+  color: rgb(252, 245, 255);
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  gap: 50px;
+  box-sizing: border-box;
+}
+
+.footer-text p {
+  font-size: 14px;
+}
+
+.social-icons a img {
+  width: 24px;
+  margin-left: 15px;
+}
+
+ 
+</style>
+<body>
+  <header class="navbar">
+    <h1>🎁Loja Fest</h1>
+    <nav>
+      <a href="index.html">Início✨</a>
+      <a href="login.html">Login✨</a>
+      <a href="compras.html">Comprar✨</a>
+      <div id="menu">
+        <p></p>
+</div>
+    </nav>
+  </header>
+
+  <!-- Área de Produtos -->
+  <main>
+    <section class="products">
+      <div class="product">
+        <img src="https://i.pinimg.com/736x/4b/92/89/4b9289bde06fc2a6c5a13609f3746233.jpg" alt="Produto 1">
+        <p>Balões rosa 💖</p>
+      </div>
+      <br>
+      <div class="product">
+        <img src="https://i.pinimg.com/736x/5e/d0/fe/5ed0fe43be45f80d3fdb8a857dbadf26.jpg" alt="Produto 2">
+        <p>Balões dois em um - Azul 🤩</p>
+      </div>
+      <br>
+      <div class="product">
+        <img src="https://i.pinimg.com/736x/f9/84/65/f98465c6a4bc7afa81fefde1697ea2a0.jpg" alt="Produto 3">
+        <p>Kit Festa - laços 😎✨</p>
+      </div>
+      <br>
+  
+      <div class="product">
+        <img src="https://i.pinimg.com/1200x/63/31/3d/63313d3fa5710ec93ed6a97fa32a3da2.jpg" alt="Produto 3">
+        <p>Balões - LED ✨🎉</p>
+      </div>
+      <br>
+      <div class="product">
+        <img src="https://i.pinimg.com/1200x/4d/c7/26/4dc726ed151a8f93c8afa6b1b1093f1b.jpg" alt="Produto 3">
+        <p>Balões - dourado 🎁✨</p>
+      </div>
+      <br>
+      <div class="product">
+        <img src="https://i.pinimg.com/1200x/9a/de/fd/9adefd71a60f166f4dc7fac45617edc4.jpg" alt="Produto 3">
+        <p>Decoração Anos 2000's 🪀💾🎥</p>
+      </div>
+      <br>
+      <div class="product">
+        <img src="https://i.pinimg.com/736x/79/19/9e/79199eb2bc04de8357dd8f161feeb062.jpg" alt="Produto 3">
+        <p>Kit Festa - Anos 2000's 🪀💾🎥</p>
+      </div>
+      <br>
+    </section>
+
+    <!-- Área de Finalização -->
+    <aside class="checkout">
+      <p>Preço total: <strong>R$ 200,00</strong></p>
+      <button>Finalizar compra</button>
+    </aside>
+  </main>
+<br>
+  <!-- Rodapé -->
+<footer>
+  <div>
+    <h4>Sobre</h4>
+    <p>Quem somos Somos apaixonados por celebrar! A Loja Fest nasceu do desejo de transformar qualquer ocasião em um momento especial. Com criatividade, qualidade e atenção aos detalhes, ajudamos você a criar festas que emocionam e ficam na memória.</p>
+  </div>
+  <div>
+    <h4>Contato</h4>
+    <p>Email: contato@lojafest.com</p><br>
+    <p>Telefone: (19) 99999-9999</p>
+  </div>
+  <hr>
+
+  <div>
+    <h4>Redes Sociais</h4>
+    <div class="social-icons">
+      <img src="img/facebook.png">
+      <img src="img/instagram.png">
+      <img src="img/twitter.png">
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+

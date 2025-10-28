@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <!--Personalizar-->
+            <title>Cadastro👨🏼‍🎓</title>
+            <link rel="shortcut icon" src="img/icons8-escola-50.png" type="image/x-icon">
+            
+             
+        </head>
+    <body style="background-color: #ccd5ae">
+      
+        
+            <h1 style="background-color:#e9edc9; padding-left: 10px;">SISTEMA DE GESTÃO ACADÊMICA</h1>
+
+            <br>
+            <form action="">
+                <label for="login">Login</label>
+                <input type="text">
+                <br>
+                <label for="senha">Senha</label>
+                <input type="text" name="senha" id="senha">
+                <br>
+                   <label for="status">Status</label>
+                   <select name="status" id="status">
+                    <option value="ativo">--</option>
+                    <option value="ativo">Ativo</option>
+                    <option value="itivo">Inativo</option>
+                    <option value="pendente">Pendente</option>
+                   </select>
+                   <br>
+                        <label for="tipo">Tipo</label>
+                        <input type="radio" name="group" id="tec" value="tec">Técnico
+                        <input type="radio" name="group" id="prof" value="prof">Professor
+                        <input type="radio" name="group" id="aluno" value="aluno">aluno
+                        <br>
+                            <label for="dtCria">Data Criação</label>
+                            <input type="textarea" name="dtAr" id="dtAr">
+                            <br>
+                                <label for="perfil">Perfil</label>
+                                <label><input type="radio" name="perfil" value="convid"> Convidado
+                                <label><input type="radio" name="perfil" value="admin"> Administrador
+                                    <br>
+                              <!-- Observações -->
+                                        <label for="obs">Observações   </label><br>
+                                        <textarea id="obs" name="obs" rows="5" cols="50" placeholder="..." style="width: 400px; height: 50px; resize: none;overflow-y:scroll"></textarea>
+    <br>
+    <label for="modulo">Módulos       </label><br>
+    <input type="checkbox" name="modulo" value="compras"> Compras
+    <input type="checkbox" name="modulo" value="biblio"> Biblioteca
+    <input type="checkbox" name="modulo" value="academ"> Acadêmico
+    <br>
+    <input type="checkbox" name="modulo" value="docu"> Documentação
+    <input type="checkbox" name="modulo" value="rh"> Recursos Humanos
+<br>
+  <!-- Botões -->
+  <br>
+  <button type="submit">Cadastrar</button>
+  <button type="reset">Excluir</button>
+</form>        
+
+
+        
+
+    </body>
+    </html>

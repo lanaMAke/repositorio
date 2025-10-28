@@ -1,0 +1,1089 @@
+    .home body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ceaddbab;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      color: white;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .carousel-container {
+      position: relative;
+      max-width: 100%;
+      overflow: hidden;
+      background-color: rgb(202, 157, 245);
+      margin: 100px auto;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .carousel-slide img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .carousel-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .carousel-buttons button {
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .carousel-buttons button:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /*Login*/
+
+    * {
+
+      box-sizing: border-box;
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+ 
+
+    .login-page body {
+
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+      background-color: #e6d0e3;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: center;
+
+      min-height: 100vh;
+
+      padding-top: 80px;
+
+    }
+
+ 
+
+    .navbar {
+
+      position: fixed;
+
+      top: 0;
+
+      left: 0;
+
+      width: 100%;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      padding: 15px 50px;
+
+      background: rgba(255, 255, 255, 0.1);
+
+      backdrop-filter: blur(10px);
+
+      color: white;
+
+      z-index: 1000;
+
+    }
+
+ 
+
+    .navbar h1 {
+
+      font-size: 24px;
+
+    }
+
+ 
+
+    .navbar a {
+
+      color: white;
+
+      text-decoration: none;
+
+      margin: 0 15px;
+
+      font-weight: bold;
+
+    }
+
+ 
+
+    .navbar a:hover {
+
+      text-decoration: underline;
+
+    }
+
+ 
+
+    .form-wrapper {
+
+      background-color: white;
+
+      padding: 30px;
+
+      border-radius: 12px;
+
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+      width: 100%;
+
+      max-width: 400px;
+
+      text-align: center;
+
+    }
+
+ 
+
+    .form-wrapper h1 {
+
+      margin-bottom: 20px;
+
+      color: #6c3b6f;
+
+    }
+
+ 
+
+    .form-wrapper input {
+
+      width: 100%;
+
+      padding: 12px;
+
+      margin: 10px 0;
+
+      border: 1px solid #ccc;
+
+      border-radius: 8px;
+
+      font-size: 16px;
+
+    }
+
+ 
+
+    .form-wrapper button {
+
+      width: 100%;
+
+      padding: 12px;
+
+      background-color: #a85ca8;
+
+      color: white;
+
+      border: none;
+
+      border-radius: 8px;
+
+      font-size: 16px;
+
+      cursor: pointer;
+
+      transition: background-color 0.3s ease;
+
+      margin-top: 10px;
+
+    }
+
+ 
+
+    .form-wrapper button:hover {
+
+      background-color: #8c4b8c;
+
+    }
+
+ 
+
+    .form-wrapper p {
+
+      margin-top: 15px;
+
+      font-size: 14px;
+
+      color: #555;
+
+    }
+
+ 
+
+    .form-wrapper a {
+
+      color: #a85ca8;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+    }
+
+ 
+
+    .form-wrapper a:hover {
+
+      text-decoration: underline;
+
+    }
+
+ 
+
+    @media (max-width: 500px) {
+
+      .navbar {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 15px 20px;
+
+      }
+
+ 
+
+      .form-wrapper {
+
+        padding: 20px;
+
+      }
+
+    }
+    /*Cadastro*/
+
+    /* Reset básico */
+
+    * {
+
+      box-sizing: border-box;
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+ 
+
+    .cad-page body {
+
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+      background-color: #e6d0e3;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: center;
+
+      min-height: 100vh;
+
+      padding-top: 80px; /* espaço para a navbar */
+
+    }
+
+ 
+
+    .navbar {
+
+      position: fixed;
+
+      top: 0;
+
+      left: 0;
+
+      width: 100%;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      padding: 15px 50px;
+
+      background: rgba(255, 255, 255, 0.1);
+
+      backdrop-filter: blur(10px);
+
+      color: white;
+
+      z-index: 1000;
+
+    }
+
+ 
+
+    .navbar h1 {
+
+      font-size: 24px;
+
+    }
+
+ 
+
+    .navbar a {
+
+      color: white;
+
+      text-decoration: none;
+
+      margin: 0 15px;
+
+      font-weight: bold;
+
+    }
+
+ 
+
+    .navbar a:hover {
+
+      text-decoration: underline;
+
+    }
+
+ 
+
+    .form-wrapper {
+
+      background-color: white;
+
+      padding: 30px;
+
+      border-radius: 12px;
+
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+      width: 100%;
+
+      max-width: 400px;
+
+      text-align: center;
+
+    }
+
+ 
+
+    .form-wrapper h1 {
+
+      margin-bottom: 20px;
+
+      color: #6c3b6f;
+
+    }
+
+ 
+
+    .form-wrapper input {
+
+      width: 100%;
+
+      padding: 12px;
+
+      margin: 10px 0;
+
+      border: 1px solid #ccc;
+
+      border-radius: 8px;
+
+      font-size: 16px;
+
+    }
+
+ 
+
+    .form-wrapper p {
+
+      margin-top: 10px;
+
+      font-weight: bold;
+
+      color: #555;
+
+      text-align: left;
+
+    }
+
+ 
+
+    .form-wrapper button {
+
+      width: 100%;
+
+      padding: 12px;
+
+      background-color: #a85ca8;
+
+      color: white;
+
+      border: none;
+
+      border-radius: 8px;
+
+      font-size: 16px;
+
+      cursor: pointer;
+
+      transition: background-color 0.3s ease;
+
+      margin-top: 10px;
+
+    }
+
+ 
+
+    .form-wrapper button:hover {
+
+      background-color: #8c4b8c;
+
+    }
+
+ 
+
+    @media (max-width: 500px) {
+
+      .navbar {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 15px 20px;
+
+      }
+
+ 
+
+      .form-wrapper {
+
+        padding: 20px;
+
+      }
+
+    }
+
+    /* compras */
+    /* Reset básico */
+
+
+    /*Login*/
+
+    * {
+
+      box-sizing: border-box;
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+ 
+
+    body {
+
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+      background-color: #e6d0e3;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: center;
+
+      min-height: 100vh;
+
+      padding-top: 80px;
+
+    }
+
+ 
+
+    .navbar {
+
+      position: fixed;
+
+      top: 0;
+
+      left: 0;
+
+      width: 100%;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      padding: 15px 50px;
+
+      background: rgba(255, 255, 255, 0.1);
+
+      backdrop-filter: blur(10px);
+
+      color: white;
+
+      z-index: 1000;
+
+    }
+
+ 
+
+    .navbar h1 {
+
+      font-size: 24px;
+
+    }
+
+ 
+
+    .navbar a {
+
+      color: white;
+
+      text-decoration: none;
+
+      margin: 0 15px;
+
+      font-weight: bold;
+
+    }
+
+ 
+
+    .navbar a:hover {
+
+      text-decoration: underline;
+
+    }
+
+ 
+
+    .form-wrapper {
+
+      background-color: white;
+
+      padding: 30px;
+
+      border-radius: 12px;
+
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+      width: 100%;
+
+      max-width: 400px;
+
+      text-align: center;
+
+    }
+
+ 
+
+    .form-wrapper h1 {
+
+      margin-bottom: 20px;
+
+      color: #6c3b6f;
+
+    }
+
+ 
+
+    .form-wrapper input {
+
+      width: 100%;
+
+      padding: 12px;
+
+      margin: 10px 0;
+
+      border: 1px solid #ccc;
+
+      border-radius: 8px;
+
+      font-size: 16px;
+
+    }
+
+ 
+
+    .form-wrapper button {
+
+      width: 100%;
+
+      padding: 12px;
+
+      background-color: #a85ca8;
+
+      color: white;
+
+      border: none;
+
+      border-radius: 8px;
+
+      font-size: 16px;
+
+      cursor: pointer;
+
+      transition: background-color 0.3s ease;
+
+      margin-top: 10px;
+
+    }
+
+ 
+
+    .form-wrapper button:hover {
+
+      background-color: #8c4b8c;
+
+    }
+
+ 
+
+    .form-wrapper p {
+
+      margin-top: 15px;
+
+      font-size: 14px;
+
+      color: #555;
+
+    }
+
+ 
+
+    .form-wrapper a {
+
+      color: #a85ca8;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+    }
+
+ 
+
+    .form-wrapper a:hover {
+
+      text-decoration: underline;
+
+    }
+
+ 
+
+    @media (max-width: 500px) {
+
+      .navbar {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 15px 20px;
+
+      }
+
+ 
+
+      .form-wrapper {
+
+        padding: 20px;
+
+      }
+
+    }
+    /*Cadastro*/
+
+    /* Reset básico */
+
+    * {
+
+      box-sizing: border-box;
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+ 
+
+    body {
+
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+      background-color: #e6d0e3;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: center;
+
+      min-height: 100vh;
+
+      padding-top: 80px; /* espaço para a navbar */
+
+    }
+
+ 
+
+    .navbar {
+
+      position: fixed;
+
+      top: 0;
+
+      left: 0;
+
+      width: 100%;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      padding: 15px 50px;
+
+      background: rgba(255, 255, 255, 0.1);
+
+      backdrop-filter: blur(10px);
+
+      color: white;
+
+      z-index: 1000;
+
+    }
+
+ 
+
+    .navbar h1 {
+
+      font-size: 24px;
+
+    }
+
+ 
+
+    .navbar a {
+
+      color: white;
+
+      text-decoration: none;
+
+      margin: 0 15px;
+
+      font-weight: bold;
+
+    }
+
+ 
+
+    .navbar a:hover {
+
+      text-decoration: underline;
+
+    }
+
+ 
+
+    .form-wrapper {
+
+      background-color: white;
+
+      padding: 30px;
+
+      border-radius: 12px;
+
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+      width: 100%;
+
+      max-width: 400px;
+
+      text-align: center;
+
+    }
+
+ 
+
+    .form-wrapper h1 {
+
+      margin-bottom: 20px;
+
+      color: #6c3b6f;
+
+    }
+
+ 
+
+    .form-wrapper input {
+
+      width: 100%;
+
+      padding: 12px;
+
+      margin: 10px 0;
+
+      border: 1px solid #ccc;
+
+      border-radius: 8px;
+
+      font-size: 16px;
+
+    }
+
+ 
+
+    .form-wrapper p {
+
+      margin-top: 10px;
+
+      font-weight: bold;
+
+      color: #555;
+
+      text-align: left;
+
+    }
+
+ 
+
+    .form-wrapper button {
+
+      width: 100%;
+
+      padding: 12px;
+
+      background-color: #a85ca8;
+
+      color: white;
+
+      border: none;
+
+      border-radius: 8px;
+
+      font-size: 16px;
+
+      cursor: pointer;
+
+      transition: background-color 0.3s ease;
+
+      margin-top: 10px;
+
+    }
+
+ 
+
+    .form-wrapper button:hover {
+
+      background-color: #8c4b8c;
+
+    }
+
+ 
+
+    @media (max-width: 500px) {
+
+      .navbar {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 15px 20px;
+
+      }
+
+ 
+
+      .form-wrapper {
+
+        padding: 20px;
+
+      }
+
+    }
+
+    /* compras */
+    /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #e60000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cart {
+  font-size: 20px;
+}
+
+/* Produtos */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.products {
+  display: flex;
+  gap: 20px;
+  flex: 3;
+}
+
+.product {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Finalização */
+.checkout {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  height: fit-content;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.checkout p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.checkout button {
+  background-color: #e60000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text p {
+  font-size: 14px;
+}
+
+.social-icons a img {
+  width: 24px;
+  margin-left: 15px;
+}

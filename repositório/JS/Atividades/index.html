@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade com JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div>
+<body>
+    <h1 onmouseover="alert('Você passou por mim..')">
+        <i>Site com JavaScript</i></h1>
+
+    <script>
+        let carro = {
+            tipo: "RAM",
+            modelo: "3500",
+            cor: "all Black"
+        }
+        let carro1 = {
+            tipo: "Civic",
+            modelo: "2020",
+            cor: "Black"
+        }
+
+        console.log(carro);
+        console.log(carro1);
+
+    </script>
+
+
+
+
+
+    <script>
+        /* interno*/
+        
+        //WHILE
+        i = 0;
+        while( i<5){
+            console.log('loop: ', i);
+            i++;
+        }
+        
+        notas = new Array[5];
+        notas[0] = 7;
+        notas[1] = 9;
+        notas[2] = 10;
+        notas[3] = 5;
+        notas[4] = 2;
+
+        console.log(notas);
+        console.log(notas[0]);
+        console.log(notas[1]);
+        console.log(notas[2]);
+        console.log(notas[3]);
+        console.log(notas[4]);
+
+
+        //DEBUGGER ( ultilizado para verificação)
+        if(notas[0] === 7){
+            debugger;
+        }
+               
+        /*
+        function soma(n1,n2){
+        let num1 = n1;
+        let num2 = n2;
+        let soma = num1 + num2;  
+        
+        return soma;
+            }
+            console.log('soma: '+soma(10,20));
+
+        alert('olá e socorro...');
+       
+       let retornoPrompt = prompt('Muito prazer, sou eu.. o site.. heheh');
+        
+       let returnConfirm = confirm('Deseja Cancelar?');*/
+
+    </script>
+    <script src="script.js"></script><!--externo ( sempre no final )-->
+</body>
+</div>
+</html>

@@ -1,0 +1,80 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117; /* preto azulado */
+  color: #c9d1d9; /* cinza claro */
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #58a6ff;
+  margin-bottom: 10px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #161b22;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(88, 166, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+form:hover {
+  transform: scale(1.02);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #8b949e;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:hover {
+  border-color: #58a6ff;
+}
+
+input[type="button"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #238636;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+input[type="button"]:hover {
+  background-color: #2ea043;
+  transform: scale(1.05);
+}
+
+span {
+  display: block;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #c9d1d9;
+  transition: color 0.3s ease;
+}
+
+span:hover {
+  color: #58a6ff;
+}

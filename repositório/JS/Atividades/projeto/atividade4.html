@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4🎁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Farmácia JS</h1>
+        <hr><br>
+        <form action="">
+            <label for="">Medicamento: </label>
+            <input type="text" id="medicamento"><br>
+            <label for="">Preço R$:</label>
+            <input type="text" id="preco">
+<br><br>
+            <div style="text-align: center;">
+            <input type="button" id="botao" value="Mostrar"></div>
+            <br>
+            <span id="msgDesc"></span><br>
+            <span id="msgValor"></span><br>
+            
+            
+            
+
+        </form>
+
+        <script>
+
+            let botao = document.querySelector('#botao');
+            // capturar eventos com mouse
+            botao.addEventListener('click', function(){
+               // alert('Clicou em eu.. ');
+               let desc = document.querySelector('#medicamento').value;
+               let preco = document.querySelector('#preco').value;
+
+               //calcular valor do medicamento a partir de duas vezes - desconto a partir dos centavos;
+            let conver = preco * 2;
+            let promo =  Math.floor(conver) ; // preciso de ajuda nessa linha
+
+                //apresentar na tela
+            let msgDesc = document.querySelector('#msgDesc'); 
+            let msgValor = document.querySelector('#msgValor'); 
+           
+            msgDesc.innerHTML = `Promoção de ${desc}`;
+            msgValor.innerHTML = `Valor a Pagar R$: ${promo.toFixed(2)}`;
+
+            });
+
+        </script>
+</body>
+</html>

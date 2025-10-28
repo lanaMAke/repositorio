@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2🎁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Revenda de Veículos JS</h1>
+        <hr><br>
+        <form action="">
+            <label for="">Veiculo</label>
+            <input type="text" id="veiculo"><br>
+            <label for="">Preço R$</label>
+            <input type="text" id="valor">
+<br><br>
+            <div style="text-align: center;">
+            <input type="button" id="botao" value="Ver Promoção"></div>
+            <br>
+            <span id="msgPromo"></span><br>
+            <span id="msgEntrada"></span><br>
+            <span id="msgParcela"></span><br>
+            
+            
+
+        </form>
+
+        <script>
+
+            let botao = document.querySelector('#botao');
+            // capturar eventos com mouse
+            botao.addEventListener('click', function(){
+               // alert('Clicou em eu.. ');
+               let veiculo = document.querySelector('#veiculo').value;
+               let valor =Number(document.querySelector('#valor').value);
+
+               //calcular min - hrs
+            let entrada = valor * 0.5;
+            let parcelas = entrada / 12;
+
+                //apresentar na tela
+            let msgPromo = document.querySelector('#msgPromo'); 
+            let msgEntrada = document.querySelector('#msgEntrada');
+            let msgParcela = document.querySelector('#msgParcela');
+            
+            msgPromo.innerText = `Promoção Veículo: ${veiculo}`;
+            msgEntrada.innerText = `Entrada de R$: ${entrada.toFixed(2)}`;
+            msgParcela.innerText = `+ 12x de R$: ${parcelas.toFixed(2)}`;
+           
+
+            });
+
+        </script>
+</body>
+</html>

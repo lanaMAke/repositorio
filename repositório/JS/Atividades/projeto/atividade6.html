@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6🎁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lan House JS</h1>
+        <hr><br>
+        <form action="">
+            <label for="">Produto: </label>
+            <input type="text" id="produto"><br>
+    
+            <label for="">Preço R$:</label>
+            <input type="text" id="valor">
+<br><br>
+            <div style="text-align: center;">
+            <input type="button" id="botao" value="Ver promoção"></div>
+            <br>
+
+            <span id="msgValor"></span><br>
+            <span id="msgPromo"></span><br>
+            
+            
+            
+
+        </form>
+
+        <script>
+
+            let botao = document.querySelector('#botao');
+            // capturar eventos com mouse
+            botao.addEventListener('click', function(){
+               // alert('Clicou em eu.. ');
+               let desc = document.querySelector('#produto').value;
+               let valor = document.querySelector('#valor').value;
+
+               //calcular promo, valor total com uma unidade com desconto;
+            let descon = valor / 2 ;
+            let pagar = descon + (valor * 2); 
+
+                //apresentar na tela
+            
+            let msgValor = document.querySelector('#msgValor'); 
+            let msgPromo = document.querySelector('#msgPromo'); 
+           
+            
+            msgValor.innerHTML = `${desc}  - Promoção: Leve 3 por R$ ${pagar.toFixed(2)}`;
+            msgPromo.innerHTML = `O 3° produto custa apenas R$: ${descon.toFixed(2)}`;
+
+            });
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio DOM</title>
+</head>
+<body>
+   
+    <h1 id="titulo">Help!</h1><br><hr>
+    <p class="text">Você sabia?
+Na física quântica, partículas como elétrons podem existir em mais de um lugar ao mesmo tempo — um fenômeno chamado superposição. Isso significa que, até serem observadas, essas partículas não têm uma posição definida, mas sim uma probabilidade de estarem em vários estados simultaneamente. É como se a realidade só “decidisse” o que é real quando alguém olha!
+</p>
+    <p class="text">As estrelas são compostas principalmente por:
+
+Hidrogênio (H) – o elemento mais abundante no universo e o principal "combustível" das estrelas.
+Hélio (He) – formado a partir da fusão do hidrogênio.
+Outros elementos (em menor quantidade):
+
+Carbono (C)
+Oxigênio (O)
+Nitrogênio (N)
+Ferro (Fe)
+Silício (Si)
+Enxofre (S)
+Cálcio (Ca)
+E muitos outros, especialmente em estrelas mais velhas ou em explosões de supernovas.
+
+
+
+
+🧬 Esses elementos estão no nosso corpo?
+Sim! E isso é fascinante:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ElementoFunção no corpo humanoHidrogênioPresente na água e em moléculas orgânicasOxigênioEssencial para respiração celularCarbonoBase de todas as moléculas orgânicasNitrogênioParte das proteínas e do DNACálcioEstrutura dos ossos e dentesFerroTransporta oxigênio no sangue (hemoglobina)FósforoPresente no DNA e na produção de energia celular
+
+✨ Conclusão poética:
+Você — e tudo ao seu redor — é feito de poeira estelar. Literalmente. Os elementos que formam seu corpo foram criados no coração de estrelas que explodiram há bilhões de anos. Carl Sagan dizia:
+
+“Somos feitos de matéria estelar.”</p>
+    <div id="novaDiv"></div>
+<br>
+ <a href=""></a>
+
+
+    <script>
+        let titulo = document.getElementById('titulo');
+        titulo.innerText = 'Bem vindo ao meu Site ✨';
+
+        let texts = document.getElementsByClassName('text');
+        texts[0].style.color = 'Blue';
+        texts[1].style.backgroundColor = 'pink';
+
+//     quant. de paragrafos que existe
+        let primParagrafo = document.querySelector('.text');
+        primParagrafo.innerText = 'No mundo quântico, observar algo pode mudar o resultado. Isso é conhecido como o efeito do observador. Um exemplo famoso é o experimento da dupla fenda, onde partículas como elétrons se comportam como ondas até serem observadas — e aí mudam de comportamento, agindo como partículas. É como se a realidade só “decidisse” o que fazer quando alguém está olhando!';
+
+        let todosParagrafs = document.querySelectorAll('p');
+        console.log(`Quant. de paragrafos: ${todosParagrafs.length}`);
+
+        let nome = document.getElementById('nome');
+        nome.value = 'Alana';
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora em JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora num site ultilizando JavaScript...</h1>
+    <p>✨🥰😎❤️💕</p>
+    <br><hr>
+    <script>
+//
+      function soma(n1,n2){
+        let val1 = n1;
+        let val2 = n2;
+
+        let soma = val1 + val2;
+        return soma;
+
+      }
+      
+//
+      function subt(n1,n2){
+          let val1 = n1;
+          let val2 = n2;
+
+          let subt = val1 - val2;
+          return subt;
+
+      }
+     
+//
+      function multi(n1,n2){
+          let val1 = n1;
+          let val2 = n2;
+
+          let multi = val1 + val2;
+          return multi;
+
+      }
+     
+//
+      function div(n1,n2){
+            let val1 = n1;
+            let val2 = n2;
+
+            let div = val1 / val2;
+            return div;
+
+      }
+      
+
+      function restDiv(n1,n2){
+            let val1 = n1;
+            let val2 = n2;
+
+            let restDiv = val1 % val2;
+            return restDiv;
+
+      }
+
+// exibição
+
+      let num1 = Number(prompt('Digite um número: '));
+      let num2 = Number(prompt('Digite segundo número: '));
+
+    let somar = soma(num1,num2);
+        alert("Soma foi de :"+somar);
+
+    let sbtr = subt(num1,num2);
+        alert("Subtração foi de :"+sbtr);
+
+    let multip = multi(num1,num2);
+        alert("Multiplição foi de :"+multip);
+
+    let divs = div(num1,num2);
+        alert("A divisão foi de :"+divs);
+    
+    </script>
+</body>
+</html>

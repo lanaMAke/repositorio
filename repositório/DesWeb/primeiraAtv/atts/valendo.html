@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro 👨🏼‍🎓</title>
+  <link rel="shortcut icon" href="img/icons8-escola-50.png" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ccd5ae;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .imagem-lateral {
+      flex: 1;
+      background-image: url('img/fundologin.jfif'); /* Substitua pelo caminho da sua imagem */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .formulario {
+      flex: 1;
+      padding: 40px;
+      background-color: #f9f9f9;
+      overflow-y: auto;
+    }
+
+    h1 {
+      background-color: #e9edc9;
+      padding: 10px;
+      margin-top: 0;
+    }
+
+    textarea {
+      width: 400px;
+      height: 50px;
+      resize: none;
+      overflow-y: scroll;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="imagem-lateral"></div>
+
+    <div class="formulario">
+      <h1>SISTEMA DE GESTÃO ACADÊMICA</h1>
+
+      <form>
+        <label for="login">Login</label><br>
+        <input type="text" id="login"><br><br>
+
+        <label for="senha">Senha</label><br>
+        <input type="password" name="senha" id="senha"><br><br>
+
+        <label for="status">Status</label><br>
+        <select name="status" id="status">
+          <option value="">--</option>
+          <option value="ativo">Ativo</option>
+          <option value="inativo">Inativo</option>
+          <option value="pendente">Pendente</option>
+        </select><br><br>
+
+        <label>Tipo</label><br>
+        <input type="radio" name="group" id="tec" value="tec"> Técnico
+        <input type="radio" name="group" id="prof" value="prof"> Professor
+        <input type="radio" name="group" id="aluno" value="aluno"> Aluno<br><br>
+
+        <label for="dtAr">Data Criação</label><br>
+        <input type="textarea" name="dtAr" id="dtAr"><br><br>
+
+        <label>Perfil</label><br>
+        <input type="radio" name="perfil" value="convid"> Convidado
+        <input type="radio" name="perfil" value="admin"> Administrador<br><br>
+
+        <label for="obs">Observações</label><br>
+        <textarea id="obs" name="obs" placeholder="..."></textarea><br><br>
+
+        <label>Módulos</label><br>
+        <input type="checkbox" name="modulo" value="compras"> Compras
+        <input type="checkbox" name="modulo" value="biblio"> Biblioteca
+        <input type="checkbox" name="modulo" value="academ"> Acadêmico<br>
+        <input type="checkbox" name="modulo" value="docu"> Documentação
+        <input type="checkbox" name="modulo" value="rh"> Recursos Humanos<br><br>
+
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Excluir</button>
+        <button type="button" onclick="location.href='login.html'">Voltar</button>
+        <br><br>
+        <button type="button" onclick="location.href='tabela.html'">Tabela</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

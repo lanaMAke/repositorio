@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cadastro✨</title>
+
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  
+
+</head>
+<style>
+   * {
+
+      box-sizing: border-box;
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+ 
+
+    body {
+
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+      background-color: #e6d0e3;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: center;
+
+      min-height: 100vh;
+
+      padding-top: 80px; /* espaço para a navbar */
+
+    }
+
+ 
+
+    .navbar {
+
+      position: fixed;
+
+      top: 0;
+
+      left: 0;
+
+      width: 100%;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      padding: 15px 50px;
+
+      background: rgba(255, 255, 255, 0.1);
+
+      backdrop-filter: blur(10px);
+
+      color: white;
+
+      z-index: 1000;
+
+    }
+
+ 
+
+    .navbar h1 {
+
+      font-size: 24px;
+
+    }
+
+ 
+
+    .navbar a {
+
+      color: white;
+
+      text-decoration: none;
+
+      margin: 0 15px;
+
+      font-weight: bold;
+
+    }
+
+ 
+
+    .navbar a:hover {
+
+      text-decoration: underline;
+
+    }
+
+ 
+
+    .form-wrapper {
+
+      background-color: white;
+
+      padding: 30px;
+
+      border-radius: 12px;
+
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+      width: 100%;
+
+      max-width: 400px;
+
+      text-align: center;
+
+    }
+
+ 
+
+    .form-wrapper h1 {
+
+      margin-bottom: 20px;
+
+      color: #6c3b6f;
+
+    }
+
+ 
+
+    .form-wrapper input {
+
+      width: 100%;
+
+      padding: 12px;
+
+      margin: 10px 0;
+
+      border: 1px solid #ccc;
+
+      border-radius: 8px;
+
+      font-size: 16px;
+
+    }
+
+ 
+
+    .form-wrapper p {
+
+      margin-top: 10px;
+
+      font-weight: bold;
+
+      color: #555;
+
+      text-align: left;
+
+    }
+
+ 
+
+    .form-wrapper button {
+
+      width: 100%;
+
+      padding: 12px;
+
+      background-color: #a85ca8;
+
+      color: white;
+
+      border: none;
+
+      border-radius: 8px;
+
+      font-size: 16px;
+
+      cursor: pointer;
+
+      transition: background-color 0.3s ease;
+
+      margin-top: 10px;
+
+    }
+
+ 
+
+    .form-wrapper button:hover {
+
+      background-color: #8c4b8c;
+
+    }
+
+ 
+
+    @media (max-width: 500px) {
+
+      .navbar {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 15px 20px;
+
+        
+
+      }
+
+ 
+
+      .form-wrapper {
+
+        padding: 20px;
+
+      }
+
+    }
+</style>
+
+<body class="cad-page">
+
+  <header class="navbar">
+
+    <h1>🎁Fest</h1>
+
+    <nav>
+
+      <a href="index.html">Início✨</a>
+
+      <a href="login.html">Login✨</a>
+
+      <a href="compras.html">Comprar✨</a>
+
+    </nav>
+
+  </header>
+
+ 
+
+  <div class="form-wrapper">
+
+    <h1>Cadastro</h1>
+
+    <form action="">
+
+      <input type="text" placeholder="Nome" required>
+
+      <input type="email" placeholder="Email" required>
+
+      <input type="password" placeholder="Senha" required>
+
+      <p>Confirme senha</p>
+
+      <input type="password" placeholder="Confirme senha" required>
+
+      <button type="submit"  id="alert" onclick="mensagem()">Cadastrar</button>
+      <script>
+          function mensagem(){
+            alert('Socorroooooooooooo');
+          } 
+      </script>
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>
+
+ 

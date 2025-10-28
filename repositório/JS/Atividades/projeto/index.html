@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1🎁</title>
+</head>
+<body>
+    <h1>Video Locadora</h1>
+        <hr><br>
+        <form action="">
+            <label for="">Titulo do Filme</label>
+            <input type="text" id="titulo"><br>
+            <label for="">Duração(min)</label>
+            <input type="text" id="duracao">
+<br>
+            <input type="button" id="botao" value="Converter em Horas e Min">
+            <br>
+            <span id="msgTitulo"></span><br>
+            <span id="msgDuracao"></span>
+        </form>
+
+        <script>
+
+            let botao = document.querySelector('#botao');
+            // capturar eventos com mouse
+            botao.addEventListener('click', function(){
+               // alert('Clicou em eu.. ');
+               let titulo = document.querySelector('#titulo').value;
+               let duracao =Number(document.querySelector('#duracao').value);
+
+               //calcular min - hrs
+            let horas = Math.floor(duracao/60);
+            let min = duracao % 60;
+
+                //apresentar na tela
+            let msgTitulo = document.querySelector('#msgTitulo'); 
+            let msgDuracao = document.querySelector('#msgDuracao');
+            
+            msgTitulo.innerText = `Titulo: ${titulo}`;
+            msgDuracao.innerText = `Duração: ${horas} hrs e ${min} nim.`;
+
+
+            });
+
+        </script>
+</body>
+</html>

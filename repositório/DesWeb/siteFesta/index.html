@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bem-vindo à Festa! ✨</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ceaddbab;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1000;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+
+  .carousel-container {
+    max-width: 900px;
+    margin: 120px auto 80px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00000030;
+    background-color: #e6deec;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+
+  .carousel-buttons button {
+    background-color: #d793f7;
+    color: rgb(253, 253, 253);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .content-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+
+  }
+
+  .content-section img {
+    width: 300px;
+    border-radius: 10px;
+  }
+
+  .content-section p {
+    max-width: 500px;
+    text-align: justify;
+    font-size: 18px;
+  }
+
+  footer {
+    background-color: #ffffff3d;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 2px solid #efbafc;
+  }
+
+  footer div {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+
+  footer h4 {
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+   main{
+    display: block;
+   }
+</style>
+
+<body class="home">
+  <header class="navbar">
+    <h1>🎁 Loja Fest</h1>
+    <nav>
+      <a href="index.html">Início✨</a>
+      <a href="login.html">Login✨</a>
+      <a href="compras.html">Comprar✨</a>
+      
+    </nav>
+  </header>
+
+  <br><hr>
+  <br><br><br>
+
+ 
+
+ <main>
+  <div class="carousel-container">
+    
+      <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-slide"><img src="https://i.pinimg.com/736x/a5/18/68/a518681c8a6953ff08e7d67073530736.jpg" alt="Imagem 1"></div>
+        <div class="carousel-slide"><img src="https://i.pinimg.com/736x/e6/f1/12/e6f11269cec2be2756c75e74199cca2f.jpg" alt="Imagem 2"></div>
+        <div class="carousel-slide"><img src="https://i.pinimg.com/1200x/e1/9b/e0/e19be09930e3ca602140148fb73450ad.jpg" alt="Imagem 3"></div>
+        <div class="carousel-slide"><img src="https://i.pinimg.com/1200x/c6/f2/7c/c6f27c4f3c0cb0b7e9935c5d651167ae.jpg" alt="Imagem 4"></div>
+        <div class="carousel-slide"><img src="https://i.pinimg.com/736x/0a/12/de/0a12de392f4dce90c46a02e64985b2ab.jpg" alt="Imagem 5"></div>
+        <div class="carousel-slide"><img src="https://i.pinimg.com/1200x/9a/de/fd/9adefd71a60f166f4dc7fac45617edc4.jpg" alt="Imagem 6"></div>
+      
+      
+    </div>
+    <div class="carousel-buttons">
+      <button id="prevBtn">❮</button>
+      <button id="nextBtn">❯</button>
+    </div>
+  </div>
+ <br>
+
+  <section class="content-section">
+    <img src="img/marca.png" alt="Imagem decorativa">
+    <div style="color: #fff; font-size: 20px">
+    <p>Transforme momentos em memórias inesquecíveis! Na Loja Fest, cada detalhe é pensado com carinho para tornar sua celebração única. De festas infantis a eventos sofisticados, oferecemos decoração personalizada, produtos temáticos e muita inspiração para encantar seus convidados.</p></div>
+  </section>
+</main>
+
+<footer>
+  <div>
+    <h4>Sobre</h4>
+    <p>Quem somos Somos apaixonados por celebrar! A Loja Fest nasceu do desejo de transformar qualquer ocasião em um momento especial. Com criatividade, qualidade e atenção aos detalhes, ajudamos você a criar festas que emocionam e ficam na memória.</p>
+  </div>
+  <div>
+    <h4>Contato</h4>
+    <p>Email: contato@lojafest.com</p><br>
+    <p>Telefone: (19) 99999-9999</p>
+  </div>
+  <hr>
+  <div>
+    <h4>Redes Sociais</h4>
+    <div class="social-icons">
+      <img src="img/facebook.png">
+      <img src="img/instagram.png">
+      <img src="img/twitter.png">
+    </div>
+  </div>
+</footer>
+
+
+  
+
+  <script>
+    const track = document.getElementById('carouselTrack');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      const slideWidth = slides[0].clientWidth;
+      track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateCarousel();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateCarousel();
+    });
+
+    window.addEventListener('resize', updateCarousel);
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3🎁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Restaurantes JS</h1>
+        <hr><br>
+        <form action="">
+            <label for="">Buffet por Quilos R$</label>
+            <input type="text" id="valorKg"><br>
+            <label for="">Consumo do Cliente (g)</label>
+            <input type="text" id="gramas">
+<br><br>
+            <div style="text-align: center;">
+            <input type="button" id="botao" value="Calcular preço"></div>
+            <br>
+            <span id="msgPagamento"></span><br>
+            
+            
+            
+
+        </form>
+
+        <script>
+
+            let botao = document.querySelector('#botao');
+            // capturar eventos com mouse
+            botao.addEventListener('click', function(){
+               // alert('Clicou em eu.. ');
+               let valor =document.querySelector('#valorKg').value;
+               let quant =document.querySelector('#gramas').value;
+
+               //calcular valorKg - gr consumidos
+            let conver = quant / 1000;
+            let preco =  valor * conver;
+
+                //apresentar na tela
+            let msgPagamento = document.querySelector('#msgPagamento'); 
+           
+            msgPagamento.innerHTML = `Valor a Pagar R$: ${preco.toFixed(2)}`;
+
+
+            });
+
+        </script>
+</body>
+</html>
