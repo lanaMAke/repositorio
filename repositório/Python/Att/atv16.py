@@ -1,0 +1,1 @@
+metros_quadrados = int()
