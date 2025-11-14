@@ -9,7 +9,7 @@ salarioBruto = valorHora * horasTrab
 sindicato = salarioBruto * 3/100
 fgts = salarioBruto * 11/100
 
-# Estrutura de condições
+# 
 if salarioBruto <= 900:
     impRenda = 0
     impRendaTxt = 'Isento'
@@ -23,11 +23,11 @@ else:
     impRenda = salarioBruto * 20/100
     impRendaTxt = '20%'
 
-# Cálculo dos descontos e salário líquido
+# 
 descontos = sindicato + impRenda
 salarioLiq = salarioBruto - descontos
 
-# Impressão formatada
+# 
 print('Aguarde carregamento...')
 time.sleep(2)
 print(f'Salário Bruto: ({valorHora:.2f} * {horasTrab}) = R$ {salarioBruto:.2f}')
@@ -38,3 +38,4 @@ print('')
 print(f'Total de descontos       : R$ {descontos:.2f}')
 print(f'Salário Líquido          : R$ {salarioLiq:.2f}')
 print('_-_'*20)
+
