@@ -13,8 +13,10 @@ num = float(input("Digite um número: "))
 
 if num > 0:
     print("Número positivo!")
-else:
+elif num < 0:
     print("Número negativo...")
+else:
+    print("você digitou valor nulo")
 
 print("")
 
