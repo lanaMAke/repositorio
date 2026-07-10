@@ -16,6 +16,7 @@ cor = input("Digite uma cor... :")
 print("")
 
 #5
+cor = input("Escolha uma cor")
 print("Sua cor favorita é ", cor)
 print("")
 
